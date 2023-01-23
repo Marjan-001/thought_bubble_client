@@ -1,14 +1,14 @@
 import React from 'react';
 import Feed from '../../components/feed/Feed';
 import Leftbar from '../../components/leftbar/Leftbar';
-import Navbar from '../../components/navbar/Navbar';
+
 import Rightbar from '../../components/rightbar/Rightbar';
 import "./profile.css"
 
 const Profile = () => {
     return (
         <>
-            <Navbar />
+
 
             <div className="profile">
                 <Leftbar></Leftbar>

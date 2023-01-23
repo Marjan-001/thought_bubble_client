@@ -1,7 +1,8 @@
 import React from 'react';
-import "./register.css"
+import { Link } from 'react-router-dom';
+import "./login.css"
 
-const Register = () => {
+const Login = () => {
     return (
         <div className="login">
             <div className="loginWrapper">
@@ -14,15 +15,13 @@ const Register = () => {
                 </div>
                 <div className="loginRight">
                     <div className="loginBox">
-                        <input placeholder="Username" className="loginInput" />
                         <input placeholder="Email" className="loginInput" />
                         <input placeholder="Password" className="loginInput" />
-                        <input placeholder="Confirm Password" className="loginInput" />
-                        <button className="loginButton">Sign Up</button>
-
-                        <button className="loginRegisterButton">
-                            Log into your account
-                        </button>
+                        <button className="loginButton">Log In</button>
+                        <span className="loginForgot">Forgot Password?</span>
+                        <Link to='/signup' ><button className="loginRegisterButton">
+                            Create a New Account
+                        </button></Link>
                     </div>
                 </div>
             </div>
@@ -30,4 +29,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default Login;
